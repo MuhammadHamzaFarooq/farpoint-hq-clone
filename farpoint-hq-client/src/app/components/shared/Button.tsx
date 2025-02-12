@@ -1,12 +1,8 @@
 import React from 'react'
-type classType = string | undefined | null
-const Button = (props:any) => {
-    let myCustomClass : classType  = "bg-black-200" + props?.customClass
+
+export const Button = (props:{children: string}) => {
   return (
-    <button
-      className={myCustomClass}
-    >Button</button>
+    <button className="transition duration-700 ease-in-out border-sky-200 bg-black text-white">{props.children}</button>
   )
 }
 
-export default Button

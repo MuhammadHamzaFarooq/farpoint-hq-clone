@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        '1xl': '1420px', // Ultra Large screen
+      },
     },
   },
   plugins: [],
